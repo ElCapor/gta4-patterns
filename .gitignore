@@ -1,5 +1,1 @@
-.vscode/compile_commands.json
-build
 versions/*.exe
-out
-.xmake

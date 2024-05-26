@@ -1,0 +1,12 @@
+{
+    mtimes = {
+        ["PatternTester\\xmake.lua"] = 1716734490,
+        ["xmake.lua"] = 1716727692
+    },
+    options = {
+        plat = "windows",
+        arch = "x86",
+        mode = "debug"
+    },
+    recheck = false
+}

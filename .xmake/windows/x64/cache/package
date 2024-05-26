@@ -1,0 +1,74 @@
+{
+    capstone = {
+        sysincludedirs = [[C:\Users\HP\AppData\Local\.xmake\packages\c\capstone\4.0.2\446d4b39bae5447d80181e2386c722f4\include]],
+        linkdirs = [[C:\Users\HP\AppData\Local\.xmake\packages\c\capstone\4.0.2\446d4b39bae5447d80181e2386c722f4\lib]],
+        __requirestr = "capstone",
+        __enabled = true,
+        envs = {
+            PATH = {
+                [[C:\Users\HP\AppData\Local\.xmake\packages\c\capstone\4.0.2\446d4b39bae5447d80181e2386c722f4\bin]],
+                [[C:\Users\HP\AppData\Local\.xmake\packages\c\capstone\4.0.2\446d4b39bae5447d80181e2386c722f4\bin]],
+                [[C:\Users\HP\AppData\Local\.xmake\packages\c\cmake\3.29.2\ae2ca291915949809139117c15e1db8a\bin]]
+            }
+        },
+        version = "4.0.2",
+        links = "capstone",
+        libfiles = [[C:\Users\HP\AppData\Local\.xmake\packages\c\capstone\4.0.2\446d4b39bae5447d80181e2386c722f4\lib\capstone.lib]],
+        installdir = [[C:\Users\HP\AppData\Local\.xmake\packages\c\capstone\4.0.2\446d4b39bae5447d80181e2386c722f4]],
+        static = true
+    },
+    asmjit = {
+        defines = "ASMJIT_STATIC",
+        sysincludedirs = [[C:\Users\HP\AppData\Local\.xmake\packages\a\asmjit\2024.03.09\f584c75a3dfd4897b4ecb4887b97e506\include]],
+        linkdirs = [[C:\Users\HP\AppData\Local\.xmake\packages\a\asmjit\2024.03.09\f584c75a3dfd4897b4ecb4887b97e506\lib]],
+        __requirestr = "asmjit",
+        __enabled = true,
+        envs = {
+            PATH = {
+                [[C:\Users\HP\AppData\Local\.xmake\packages\a\asmjit\2024.03.09\f584c75a3dfd4897b4ecb4887b97e506\bin]],
+                [[C:\Users\HP\AppData\Local\.xmake\packages\c\cmake\3.29.2\ae2ca291915949809139117c15e1db8a\bin]]
+            }
+        },
+        version = "2024.03.09",
+        links = "asmjit",
+        license = "zlib",
+        libfiles = [[C:\Users\HP\AppData\Local\.xmake\packages\a\asmjit\2024.03.09\f584c75a3dfd4897b4ecb4887b97e506\lib\asmjit.lib]],
+        installdir = [[C:\Users\HP\AppData\Local\.xmake\packages\a\asmjit\2024.03.09\f584c75a3dfd4897b4ecb4887b97e506]],
+        static = true
+    },
+    asmtk = {
+        defines = {
+            "ASMTK_STATIC",
+            "ASMJIT_STATIC"
+        },
+        sysincludedirs = {
+            [[C:\Users\HP\AppData\Local\.xmake\packages\a\asmtk\2023.6.14\40766ba8b14e49aa8c428f9783faf24e\include]],
+            [[C:\Users\HP\AppData\Local\.xmake\packages\a\asmjit\2024.03.09\f584c75a3dfd4897b4ecb4887b97e506\include]]
+        },
+        linkdirs = {
+            [[C:\Users\HP\AppData\Local\.xmake\packages\a\asmtk\2023.6.14\40766ba8b14e49aa8c428f9783faf24e\lib]],
+            [[C:\Users\HP\AppData\Local\.xmake\packages\a\asmjit\2024.03.09\f584c75a3dfd4897b4ecb4887b97e506\lib]]
+        },
+        __requirestr = "asmtk",
+        __enabled = true,
+        envs = {
+            PATH = {
+                [[C:\Users\HP\AppData\Local\.xmake\packages\a\asmtk\2023.6.14\40766ba8b14e49aa8c428f9783faf24e\bin]],
+                [[C:\Users\HP\AppData\Local\.xmake\packages\c\cmake\3.29.2\ae2ca291915949809139117c15e1db8a\bin]],
+                [[C:\Users\HP\AppData\Local\.xmake\packages\a\asmjit\2024.03.09\f584c75a3dfd4897b4ecb4887b97e506\bin]]
+            }
+        },
+        version = "2023.6.14",
+        links = {
+            "asmtk",
+            "asmjit"
+        },
+        license = "zlib",
+        libfiles = {
+            [[C:\Users\HP\AppData\Local\.xmake\packages\a\asmtk\2023.6.14\40766ba8b14e49aa8c428f9783faf24e\lib\asmtk.lib]],
+            [[C:\Users\HP\AppData\Local\.xmake\packages\a\asmjit\2024.03.09\f584c75a3dfd4897b4ecb4887b97e506\lib\asmjit.lib]]
+        },
+        installdir = [[C:\Users\HP\AppData\Local\.xmake\packages\a\asmtk\2023.6.14\40766ba8b14e49aa8c428f9783faf24e]],
+        static = true
+    }
+}
