@@ -1,3 +1,5 @@
+# PYTHON VERSION
+
 # GTA IV Pattern Builder & Unit Test
 
 GOAL : Building GTAIV function patterns that work for all gta 4 versions , from 1000 (Base) to 1130 (EFLC) until 1200 (CE). These patterns can be used to build a framework similar to scripthook/iv-sdk
@@ -32,15 +34,11 @@ This is not newbie-friendly.
 
 This is what you use to grab addresses of essential game functions, to build your own mods/dlls/asi plugins etc
 
-# Building
-XMake & C++ compiler , preferrably MSVC (i dont support GCC/CLANG)
+# Running
+just use any python version, necessary modules :
 
 ```
-git clone --recursive https://github.com/elcapor/gta4-patterns.git
-
-cd gta4-patterns
-
-xmake f -p windows -m debug -a x86
+keystone-engine
 ```
 
 # FAQ
