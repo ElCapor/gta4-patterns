@@ -1,4 +1,0 @@
-[ 50%]: compiling.debug PatternTester\src\unit.cpp
-[ 75%]: linking.debug PatternTester.exe
-[100%]: build ok, spent 5.625s
-warning: .\PatternTester\xmake.lua:10: cannot match add_files("PatternBuilder\src\**.cpp") in target(PatternTester)
