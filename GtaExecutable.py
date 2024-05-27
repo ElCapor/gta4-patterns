@@ -42,4 +42,4 @@ class GtaExecutable:
         Returns:
             int: image base
         """
-        return 0x400000
+        return 0x401000

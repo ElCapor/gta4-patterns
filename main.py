@@ -4,7 +4,7 @@ import os
 from Config import Config
 from Eyestep.Eyestep import Eyestep
 from Eyestep.Pattern import convert_ida_pattern_to_byte_pattern_and_mask, aob_scan, xref_string
-from Eyestep.Utils import d2h, h2d
+from Eyestep.Utils import d2h, h2d, b2h
 
 config : Config = Config()
 
@@ -20,5 +20,5 @@ for version in [1200]:
     print([d2h(num + gta.get_image_base()) for num in matches])
     for sublist in xref_string(eye.data, "commonimg:/"):
         print([d2h(num + gta.get_image_base()) for num in sublist])
-        print([d2h(eye.data[num:num + 5]) for num in sublist])
+        print([b2h(eye.data[num - 1:num + 5]) for num in sublist])
 #print(d2h(gta.get_image_base()))

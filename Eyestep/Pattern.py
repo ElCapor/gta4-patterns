@@ -56,9 +56,9 @@ def aob_scan(data, ida_pattern):
 def xref_string(data, string :str) -> list[int]:
     # careful , hardcoded base address
     result :list[int] = aob_scan(data, string2aob(string))
-    print(d2h(result[0] + 0x400000))
+    print(d2h(result[0] + 0x401000))
     if len(result) > 0:
-        return [aob_scan(data, ptr2string(ptr + 0x400000)) for ptr in result]
+        return [aob_scan(data, ptr2string(ptr + 0x401000)) for ptr in result]
     else:
         print(f"[WARNING] String {string} not found in memory")
         return []
