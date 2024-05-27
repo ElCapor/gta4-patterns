@@ -41,10 +41,14 @@ def aob_scan(data, ida_pattern):
 
     return matches
 
+"""
 for data in convert_ida_pattern_to_byte_pattern_and_mask("F8 ? F9 90"):
     print(data)
+
 
 data = [0xF8, 0x12, 0xF9, 0x90, 0xF8, 0x34, 0xF9, 0x90]
 ida_pattern = "F8 ? F9 90"
 matches = aob_scan(data, ida_pattern)
 print(matches)  # Output: [0, 4]
+
+"""
