@@ -1,3 +1,5 @@
+import struct
+
 def convert_ida_pattern_to_byte_pattern_and_mask(ida_pattern):
     byte_pattern = []
     mask = []
@@ -21,6 +23,15 @@ def convert_ida_pattern_to_byte_pattern_and_mask(ida_pattern):
             i += 2
 
     return byte_pattern, mask
+
+
+def string2aob(string :str) -> str:
+    aob = ' '.join(f'{ord(c):02X}' for c in string)
+    return aob
+
+def ptr2string(ptr :int) -> str:
+    aob = ''.join(f'{byte:02X}' for byte in struct.pack('<I', ptr))
+    return aob
 
 def compare_bytes(data, pattern, mask, start):
     for i in range(len(pattern)):
