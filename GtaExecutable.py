@@ -35,3 +35,11 @@ class GtaExecutable:
         version_str = f"{major}{minor}{build}{revision}"
 
         return int(version_str)
+
+    def get_image_base(self) -> int:
+        """Get the image base of the file
+
+        Returns:
+            int: image base
+        """
+        return 0x400000
