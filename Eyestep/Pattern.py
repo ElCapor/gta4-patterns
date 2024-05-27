@@ -1,4 +1,5 @@
 import struct
+from .Utils import d2h, h2d
 
 def convert_ida_pattern_to_byte_pattern_and_mask(ida_pattern):
     byte_pattern = []
@@ -30,7 +31,7 @@ def string2aob(string :str) -> str:
     return aob
 
 def ptr2string(ptr :int) -> str:
-    aob = ''.join(f'{byte:02X}' for byte in struct.pack('<I', ptr))
+    aob = ' '.join(f'{byte:02X}' for byte in struct.pack('<I', ptr))
     return aob
 
 def compare_bytes(data, pattern, mask, start):
@@ -51,6 +52,18 @@ def aob_scan(data, ida_pattern):
             matches.append(i)
 
     return matches
+
+def xref_string(data, string :str) -> list[int]:
+    # careful , hardcoded base address
+    result :list[int] = aob_scan(data, string2aob(string))
+    print(d2h(result[0] + 0x400000))
+    if len(result) > 0:
+        return [aob_scan(data, ptr2string(ptr + 0x400000)) for ptr in result]
+    else:
+        print(f"[WARNING] String {string} not found in memory")
+        return []
+
+
 
 """
 for data in convert_ida_pattern_to_byte_pattern_and_mask("F8 ? F9 90"):
