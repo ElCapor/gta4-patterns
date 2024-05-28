@@ -41,6 +41,13 @@ just use any python version, necessary modules :
 keystone-engine
 ```
 
+# TODO
+[ ] -> Port all functions from Pattern.py into Eyestep class when it's full working
+
+[ ] -> Write the aob test framework
+
+[ ] -> Write a web server to see results in direct
+
 # FAQ
 - Why is versions folder empty ?
     <br>Cuz i don't want to go in jail yet, you can easily find all the versions on the internet by extracting patches from a website like this one https://community.pcgamingwiki.com/files/file/1054-grand-theft-auto-iv-patch-6/

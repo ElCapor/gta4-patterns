@@ -62,6 +62,10 @@ def xref_string(data, string :str) -> list[int]:
     else:
         print(f"[WARNING] String {string} not found in memory")
         return []
+    
+def read_bytes(data,start, len) ->bytes:
+    return data[start:start+len+1]
+    
 
 
 
