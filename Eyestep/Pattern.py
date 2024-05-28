@@ -65,7 +65,9 @@ def xref_string(data, string :str) -> list[int]:
     
 def read_bytes(data,start, len) ->bytes:
     return data[start:start+len]
-    
+
+def read_int(data, start) -> int:
+    return int(read_bytes(data, start, 4).hex(), 16)
 
 
 
